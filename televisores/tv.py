@@ -43,7 +43,7 @@ class TV:
     def setControl(self,control):
         self._control=control
     def canalUp(self):
-        if self.canal >= 1 and self.canal < 120 and self._estado == True:
+        if self._canal >= 1 and self._canal < 120 and self._estado == True:
             self._canal +=1
     def canalDown(self):
         if self._canal > 1 and self._canal <= 120 and self._estado == True:
